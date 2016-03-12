@@ -1,0 +1,27 @@
+# Create and configure a Windows Virtual Machine with Resource Manager and Azure PowerShell
+
+Login-AzureRmAccount
+
+# You can also use a specific Tenant if you would like a faster login experience
+# Login-AzureRmAccount -TenantId xxxx
+
+# Get your subscription name using the following command:
+# Get-AzureSubscription | Sort SubscriptionName | Select SubscriptionName
+
+$subscr = "Free_Trial"
+$rgName = "vm_resource_group"
+$locName = "North Europe"
+
+Select-AzureRmSubscription -SubscriptionName $subscr
+
+New-AzureRmResourceGroup -Name $rgName -Location $locName
+
+
+
+
+#You can use this command to list your existing resource groups.
+    # Get-AzureRmResourceGroup | Sort ResourceGroupName | Select ResourceGroupName
+
+# To see a list of the Azure locations where you can create Resource Manager-based virtual machines.
+    #$loc=Get-AzureRmLocation | where { $_.Name –eq "Microsoft.Compute/virtualMachines" }
+    #$loc.Locations
