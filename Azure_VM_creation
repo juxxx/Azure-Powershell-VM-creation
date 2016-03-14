@@ -1,8 +1,8 @@
 # Create and configure a Windows Virtual Machine with Resource Manager and Azure PowerShell
-# run command giving following parmeters:
+# run command giving following parameters:
 # CreateAzureVM.ps1 -vmname "MyVMNameHere” -vmsize “MyVMSizeHere” -nicName "MyNICNameHere" -subscr “MySubsNameHere” 
 
-# optionally to you can delete this param -clause (line 6) and give variable values below
+# optionally you can delete this param clause (line 6) and give predefined variable values below
 param ($vmName, $vmSize, $nicName, $subscr)
 
 Login-AzureRmAccount
