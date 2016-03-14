@@ -11,10 +11,6 @@ CreateAzureVM.ps1 -vmname "MyVMNameHere” -vmsize “MyVMSizeHere” -nicName "
 
 If some options needs to be modified, it's best done by changing the corresponding variable values, defaults listed as follows:
 
-#$subscr = "Free_Trial"
-# $vmName="TestVm_X"
-# $vmSize="Standard_A1"
-# $nicName="vmNIC"
 $rgName = "vm_resource_group"
 $locName = "North Europe"
 $saName="jukkatpmvmstorage"
