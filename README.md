@@ -10,6 +10,7 @@ CreateAzureVM.ps1 -vmname "MyVMNameHere” -vmsize “MyVMSizeHere” -Subscript
 
 If some options needs to be modified, it's best done by changeing the corresponding variable values, defaults listed as follows:
 $rgName = "vm_resource_group"
+
 $locName = "North Europe"
 $saName="testvmstorageaccount"
 $saType="Standard_LRS"
